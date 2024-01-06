@@ -97,7 +97,7 @@ def main():
 
             v_oldpeak = st.number_input(label='ST Depression Induced by Exercise',
                                         min_value=loaded_data['oldpeak'].min(),
-                                        max_value=loaded_data['oldpeak'].max())exang_dict = {'No':0, 'Yes':1}
+                                        max_value=loaded_data['oldpeak'].max())
             
             ca_dict = {'0':0, '1':1, '2':2, '3':3}
             def ca_choice(option):
