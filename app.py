@@ -132,7 +132,8 @@ def main():
                 model = model_choice(v_model)
                 scaler = jb.load(scaler_filename)
                 feature = [v_age, sex_choice(v_sex), cp_choice(v_cp), v_trestbps, v_chol,
-                        fbs_choice(v_fbs), restecg_choice(v_restecg), v_thalach, exang_choice(v_exang), v_oldpeak]
+                        fbs_choice(v_fbs), restecg_choice(v_restecg), v_thalach, exang_choice(v_exang), v_oldpeak,
+                        slope_choice(v_slope), ca_choice(v_ca), thal_choice(v_thal), ]
                 feature = np.reshape(feature, (1, -1))
                 feature = scaler.transform(feature)
 
